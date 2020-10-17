@@ -46,7 +46,6 @@
 </head>
 
 <body>
-
     <div class="fh5co-loader"></div>
 
     <div id="page">
@@ -97,14 +96,14 @@
             </div>
         </nav>
         <header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner"
-            style="background-image:url(images/img1212.jpg);" data-stellar-background-ratio="0.5">
+            style="background-image:url(images/course.jpg);" data-stellar-background-ratio="0.5">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <div class="display-t">
                             <div class="display-tc animate-box" data-animate-effect="fadeIn">
-                                <h1>Registration</h1>
+                                <h1>Add Your Content</h1>
                                 <h2>You Can Post Your Content in the Web. <a href="index.html"
                                         target="_blank">@About_java</a></h2>
                             </div>
@@ -132,126 +131,47 @@
 
                     </div>
                     <div class="col-md-6 animate-box">
-                        <h3>Sign Up</h3>
+                        <h3>Add Your Content</h3>
                         <form action="#">
                             <div class="row form-group">
                                 <div class="col-md-6">
-                                    <!-- <label for="fname">First Name</label> -->
-                                    <input type="text" id="fname" class="form-control" placeholder="Your firstname">
+                                    <label for="fname">Author Name</label>
+                                    <input type="text" id="fname" class="form-control" placeholder="First Name"
+                                        required>
                                 </div>
                                 <div class="col-md-6">
-                                    <!-- <label for="lname">Last Name</label> -->
-                                    <input type="text" id="lname" class="form-control" placeholder="Your lastname">
-                                </div>
-                            </div>
-
-
-                            <div class="row form-group">
-                                <div class="col-md-12">
-                                    <!-- <label for="Occupation">Occupation</label> -->
-                                    <input type="text" id="Occupation" class="form-control"
-                                        placeholder="Insitution/Organization">
-                                </div>
-                            </div>
-
-
-
-                            <div class="row form-group">
-                                <div class="col-md-12">
-                                    <label class="gender radio-inline">Gender</label>
-
-                                    <label class="radio-inline">
-                                        <input type="radio" name="gender">Male
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="gender">Female
-                                    </label>
-                                </div>
-                            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <div class="row form-group">
-                                <div class="col-md-12">
-                                    <!-- <label for="dob">Date of Birth</label> -->
-                                    <input type="date" id="dob" class="form-control" placeholder="Your Date of Birth">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col-md-4">
-                                    <!-- <label for="City">City</label> -->
-                                    <input type="text" id="city" class="form-control" placeholder="Your City">
-                                </div>
-                                <div class="col-md-5">
-                                    <!-- <label for="State">State</label> -->
-                                    <input type="text" id="state" class="form-control" placeholder="Your state">
-                                </div>
-                                <div class="col-md-3">
-                                    <!-- <label for="pincode">Pincode</label> -->
-                                    <input type="number" id="pincode" class="form-control" placeholder="Pincode">
+                                    <label for="lname">*</label>
+                                    <input type="text" id="lname" class="form-control" placeholder="Last Name" required>
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <div class="col-md-12">
-                                    <!-- <label for="email">Email</label> -->
-                                    <input type="text" id="email" class="form-control" placeholder="Your email address">
+                                    <label for="subject">Languages</label>
+
+                                    <select name="language" class="form-control" id="language">
+                                        <!-- <option value="Null" selected>None</option> -->
+                                        <option value="C">C</option>
+                                        <option value="C++">C++</option>
+                                        <option value="Java">Java</option>
+                                        <option value="Php">PHP</option>
+                                        <option value="Python">Python</option>
+                                        <option value="Kotline">Kotline</option>
+                                    </select>
                                 </div>
                             </div>
-
-
-
                             <div class="row form-group">
                                 <div class="col-md-12">
-                                    <!-- <label for="password">Password</label> -->
-                                    <input type="password" id="password" class="form-control"
-                                        placeholder="Your Password">
+                                    <label for="subject">Heading</label>
+                                    <input type="text" id="subject" class="form-control" placeholder="Content Heading">
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <div class="col-md-12">
-                                    <!-- <label for="cpassword">Email</label> -->
-                                    <input type="password" id="cpassword" class="form-control"
-                                        placeholder="Confrom Password">
+                                    <label for="message">Content</label>
+                                    <textarea name="message" id="message" cols="30" rows="10" class="form-control"
+                                        placeholder="Your Content"></textarea>
                                 </div>
                             </div>
-
-                            <!-- <div class="row form-group">
-                                <div class="col-md-12">
-                                     <label for="subject">Subject</label> 
-                            <input type="text" id="subject" class="form-control"
-                                placeholder="Your subject of this message">
-                    </div>
-                </div>
-
-                <div class="row form-group">
-                    <div class="col-md-12">
-                         <label for="message">Message</label> 
-                        <textarea name="message" id="message" cols="30" rows="10" class="form-control"
-                            placeholder="Say something about us"></textarea>
-                    </div>
-                </div>  -->
                             <div class="form-group">
                                 <input type="submit" value="Sign Up" class="btn btn-primary">
                             </div>
@@ -356,7 +276,6 @@
     <script src="js/google_map.js"></script>
     <!-- Main -->
     <script src="js/main.js"></script>
-
 </body>
 
 </html>
